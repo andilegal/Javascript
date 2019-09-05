@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>manipulando valores</title>
+	<meta charset=utf-8>
+	<meta name=description content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+		
+		function distribuiCaracter () {
+	// selecionar o valor digitado
+	var caracter = document.getElementById('entrada').value
+	//Limpar o campo de digitacao
+	document.getElementById('entrada').value = ''
+	//Limpar espaços em brando nas extremidades da String 
+	caracter.trim()
+	switch (caracter) {
+		case '0':
+			// statements_1
+			case '1':
+			case '2':
+			case '3':
+			case '4':
+			case '5':
+			case '6':
+			case '7':
+			case '8':
+			case '9':
+
+			//Adicionar o caracter no campo referente a numeros
+			 // '=' para substituir a letra inserida
+			 // += para escrever uma letra atras da outra
+			document.getElementById('apenas_numeros').value += caracter
+			break;
+			default:
+			//Adicionar o caracter no campo referemte a letras
+			document.getElementById('apenas_letras').value += caracter
+	}
+}
+</script>
+</head>
+<body>
+	
+	<input type="text"
+	name="" 
+	value=""
+	placeholder="Digite um caractere aqui"
+	onkeyup="distribuiCaracter()"
+	id="entrada">
+	<hr>
+	<span>Letra:</span>
+	<input type="text" 
+	name=""
+	disabled="disabled" 
+	value=""
+	placeholder="Digite um caractere aqui"
+	id="apenas_letras">
+	<hr>
+	<span>Número:</span>
+	<input type="text" 
+	name=""
+	disabled="disabled" 
+	value=""
+	placeholder="Digite um caractere aqui"
+	id="apenas_numeros">
+</body>
+</html>

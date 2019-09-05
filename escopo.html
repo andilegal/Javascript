@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Escopo</title>
+	<meta charset=utf-8>
+	<meta name=description content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<script>
+		// 3 escopos: global, funcao, bloco
+		var serie='Friends'
+
+		//escopo de bloco
+		if(true){
+
+			var serie2='game of thrones'
+
+			document.write(serie)
+		}
+
+		document.write(serie2)
+
+		document.write('<br>')
+
+		function x(){
+			var serie3='The walking dead'
+			document.write(serie)
+			document.write(serie2)
+		}
+
+
+		x()
+	</script>
+</head>
+<body>
+
+</body>
+</html>

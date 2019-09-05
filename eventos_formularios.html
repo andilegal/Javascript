@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Eventos formularios</title>
+	<meta charset=utf-8>
+	<meta name=description content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<script >
+		
+	</script>
+</head>
+<body>
+	<!-- onfocus - foca na label que vc deseja primeiro -->
+	<!-- onblur - é disparado quando perde o foco -->
+	<!-- onchange - ultilizaco quando um elemento sobre uma modificacao de estado -->
+
+<input onfocus="console.log('recebeu')" onblur="console.log('perde')" type="text" >
+<select onchange="console.log('Estado foi modificado')">
+	<option> Selecione</option>
+	<option value="1">Primeira opcao</option>
+	<option value="2">Segunda opcao</option>
+	
+</select>
+</body>
+</html>

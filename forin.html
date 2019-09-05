@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forin</title>
+	<meta charset=utf-8>
+	<meta name=description content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<script type="text/javascript">
+//var listaConvidado = ['jorge', 'jamilton', 'jose', 'ana', 'maria']	
+var listaConvidado = Array()
+listaConvidado['a']= 'jorge'
+listaConvidado[10]= 'jamilton'
+listaConvidado['zebra']= 'jose'
+listaConvidado[-1]= 'ana'
+listaConvidado[true]= 'maria'
+
+console.log(listaConvidado);
+for(var x in listaConvidado){
+console.log('indice ' +x+ ' valor ' + listaConvidado[x])
+}	
+	</script>
+</head>
+<body>
+
+</body>
+</html>

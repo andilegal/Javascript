@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bom - Window</title>
+	<meta charset=utf-8>
+	<meta name=description content="">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+	<script type="">
+	var janela
+		function abrirPopUp () {
+			// body... 
+		janela = window.open('http://www.google.com', 'nova_janela', 'width=250,height=220')
+		}
+		function fecharPopUp () {
+			// body... 
+janela.close()
+		}
+		function imprimirPagina () {
+			// body... 
+			window.print()
+		}
+
+	</script>
+</head>
+<body>
+<button onclick="abrirPopUp()" >Abrir janela</button>
+<button onclick="fecharPopUp()" >fechar janela</button>
+<button onclick="imprimirPagina()"> imprimir</button>
+</body>
+</html>
